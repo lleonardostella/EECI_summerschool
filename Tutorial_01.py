@@ -1,29 +1,29 @@
 # Tutorial 1 
 # Part 1: Introduction to Python
 
-# Printing "Hello World" to the console
-print("Hello World!")
+# Printing to the console
+print("Hello World! This is the first day of the EECI course on Game Theory with Engineering Applications")
 
-# Variables and Data Types
-message = "Welcome to Python!"
+# Variables and data types
+message = "Welcome to Birmingham!"
 print(message)
 
 # Numbers
-num1 = 10
-num2 = 5
+num1 = 30
+num2 = 15
 sum = num1 + num2
 print("The sum of", num1, "and", num2, "is", sum)
 
 # Strings
-name = "John"
-age = 25
+name = "Leonardo"
+age = 33
 print("My name is", name, "and I am", age, "years old.")
 
-# User Input
+# User input
 name = input("Enter your name: ")
 print("Hello,", name, "!")
 
-# Basic Math Operations
+# Basic math operations
 num1 = int(input("Enter the first number: "))
 num2 = int(input("Enter the second number: "))
 product = num1 * num2
@@ -37,19 +37,16 @@ multi-line comment
 """
 
 
-
-# Part 2: Conditionals and Loops
-
-# If-else Statements
+# If-else statements
 age = 18
 if age >= 18:
     print("You are eligible to vote.")
 else:
     print("You are not eligible to vote.")
 
-# Comparison Operators
-num1 = 10
-num2 = 5
+# Comparison operators
+num1 = 1
+num2 = 15
 if num1 > num2:
     print(num1, "is greater than", num2)
 elif num1 < num2:
@@ -57,31 +54,32 @@ elif num1 < num2:
 else:
     print(num1, "is equal to", num2)
 
-# Logical Operators
+# Logical operators
 is_raining = True
 is_sunny = False
 if is_raining and not is_sunny:
-    print("It's raining.")
+    print("It is raining.")
 elif not is_raining and is_sunny:
-    print("It's sunny.")
+    print("It is sunny.")
 elif is_raining and is_sunny:
-    print("It's both raining and sunny.")
+    print("It is raining and sunny at the same time.")
 else:
-    print("It's neither raining nor sunny.")
+    print("It is neither raining nor sunny.")
 
-# While Loop
+# Loops
+# While loop
 count = 1
-while count <= 5:
+while count <= 10:
     print("Count:", count)
     count += 1
 
-# For Loop
-fruits = ["apple", "banana", "cherry"]
+# For loop
+fruits = ["apple", "banana", "watermelon"]
 for fruit in fruits:
     print("I love", fruit + "s")
 
-# Range Function
-for num in range(1, 6):
+# Range function
+for num in range(1, 11):
     print(num)
 
 # Break and Continue Statements
@@ -93,23 +91,23 @@ for num in range(1, 11):
     print(num)
 
 
-# Part 3: Functions, Lists, and File Handling
+# Functions, lists and file handling
 
 # Functions
 def greet(name):
     print("Hello,", name + "!")
 
-greet("Alice")
-greet("Bob")
+greet("Leonardo")
+greet("Dario")
 
 def add_numbers(num1, num2):
     return num1 + num2
 
-result = add_numbers(10, 5)
+result = add_numbers(12, 7)
 print("The sum is:", result)
 
-# Lists
-fruits = ["apple", "banana", "cherry"]
+# lists
+fruits = ["apple", "banana", "watermelon"]
 print("First fruit:", fruits[0])
 print("Number of fruits:", len(fruits))
 
@@ -119,7 +117,7 @@ print("Updated fruits list:", fruits)
 for fruit in fruits:
     print("I have", fruit + "s")
 
-# File Handling
+# File handling
 file = open("data.txt", "w")
 file.write("Hello, World!")
 file.close()
@@ -129,7 +127,7 @@ content = file.read()
 print("File content:", content)
 file.close()
 
-# Error Handling
+# Error handling
 try:
     num = int(input("Enter a number: "))
     result = 10 / num
